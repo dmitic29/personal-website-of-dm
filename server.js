@@ -10,7 +10,7 @@ app.use(express.static(__dirname + '/dist/mitidimi'));
 
 app.get('/*', function(req,res) {
 
-res.sendFile(path.join(__dirname+'/dist/mitidimi/src/index.html'));
+res.sendFile(path.join(__dirname+'/dist/mitidimi/index.html'));
 });
 
 // Start the app by listening on the default Heroku port
