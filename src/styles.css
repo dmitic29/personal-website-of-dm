@@ -1,1 +1,230 @@
-/* You can add global styles to this file, and also import other style files */
+@import '@angular/material/prebuilt-themes/purple-green.css';
+
+h1 {
+  color: rgb(51,51,51);
+  font-family: 'Roboto', 'Helvetica Neue', sans-serif;
+  font-size: 250%;
+}
+h2, h3 {
+  color: seagreen;
+  font-family: 'Roboto', 'Helvetica Neue', sans-serif;
+  font-weight: lighter;
+}
+
+h6 {
+  color: #333;
+  font-family: 'Roboto', 'Helvetica Neue', sans-serif;
+  font-weight: 100;
+  font-size: 8pt;
+}
+body {
+  margin: 2em;
+}
+
+p {
+  color: lightgray;
+  text-align: justify;
+}
+
+body, input[type="text"], button {
+  color: rgb(51,51,51);
+  font-family: 'Roboto', Cambria, Georgia;
+}
+
+button {
+  outline: none;
+}
+
+a, a:visited {
+  text-decoration: none;
+  color: green;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+* {
+  font-family: 'Roboto', 'Helvetica Neue', sans-serif;
+}
+
+html, body { height: 100%; }
+body { margin: 0;
+   font-family: Roboto, "Helvetica Neue", sans-serif;
+   overflow: hidden;
+ }
+
+ .image-para {
+   text-align: center;
+ }
+
+ .toolbar {
+  position: static;
+   margin-top: 0px;
+   background-color: seagreen;
+ }
+
+ .home-image {
+   margin: 5px;
+ }
+
+/*Button for show and hide sidebar*/
+.menu-button {
+  height: 40px;
+  width: 40px;
+  border-radius: 100%;
+  font-weight: bolder;
+  color: seagreen;
+  background-color: rgb(51,51,51);
+  font-size: 14pt;
+  position: fixed;
+  margin-top: 0;
+  z-index: +1;
+}
+
+.page-text {
+  padding-left: 20%;
+  padding-right: 20%;
+  padding-top: 0%;
+  text-justify: auto;
+  margin-bottom: 80px;
+  margin-top: 80px;
+}
+
+.side-container {
+  display: block;
+  height: 100%;
+}
+
+.side-content {
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+  height: 100%;
+  overflow: scroll;
+}
+
+.side-sidenav {
+  width: 15%;
+  padding-bottom: 10px;
+  box-sizing: border-box;
+  height: 91%;
+  padding-top: 0;
+  padding-bottom: 0;
+  border-right: 2px solid whitesmoke;
+  display: none;
+  -ms-overflow-style: none;
+  overflow-y: hidden;
+  overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+/*Menu bar copyright text*/
+#madebyme {
+  position: sticky;
+  white-space: normal;
+  margin-left: 30px;
+  left: 100%;
+  font-size: 12pt;
+  line-height: 14px;
+}
+
+#copyright {
+  text-align: center;
+  position: relative;
+  bottom: -40%;
+}
+
+/*Sidebar aesthetics*/
+mat-sidenav div {
+  width: 100%;
+  border: 1px solid transparent;
+  background-color: rgb(51,51,51);
+}
+
+mat-sidenav a:hover {
+  text-decoration: none;
+}
+
+mat-sidenav a div:hover {
+  color: whitesmoke;
+}
+
+/*Page links in the sidebar*/
+mat-sidenav a div {
+  margin-top: 5px;
+  color: rgb(51,51,51);
+  background-color: seagreen;
+  border: none;
+  width: 92%;
+  height: 50px;
+  padding-top: 25px;
+  text-align: center;
+  font-size: 12pt;
+  border-radius: 10px;
+  border: 2px outset rgb(51,51,51);
+}
+
+.selected-link {
+  background-color: rgb(51,51,51);
+  color: seagreen;
+  border: 4px inset seagreen;
+}
+
+.selected-link:hover {
+  color:seagreen;
+}
+
+mat-sidenav a:hover {
+  background-color: #333;
+}
+
+
+/*The two small png icons on the work page*/
+.pngs {
+  height: 20px;
+  widows: 20px;
+}
+
+.pdf-preview {
+  margin-top: 30px;
+  width: 600px;
+  overflow: hidden;
+
+}
+
+.image {
+  max-height: 550px;
+  max-width: 968px;
+  left: 25%;
+  right: 25%;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  display: inline-block;
+  margin-top: -10px;
+  margin-bottom: 10px;
+}
+
+mat-sidenav-content {
+    background-color: #383f47;
+    color: lightslategrey;
+  }
+
+.slider-contain {
+  width: 100%;
+  margin-bottom: 5%;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.photo-slider {
+  width: 100%;
+}
+
+styles .mat-slider-thumb {
+  background-color: seagreen;
+}
+

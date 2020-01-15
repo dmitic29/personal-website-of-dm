@@ -6,5 +6,14 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'personal-website';
+  title = 'Dimitrije Mitic';
+  opened = true;
+  buttonIcon = '←';
+
+  menuOpen(): boolean {
+    this.opened = !this.opened;
+    this.buttonIcon = this.buttonIcon === '←' ? '→' : '←';
+
+    return this.opened;
+  }
 }

@@ -1,0 +1,7 @@
+<div class="page-text">
+  <div class="slider-contain">
+    <div *ngIf="showMessage" class="image-para">Drag slider (or use arrow keys) to see all photos.</div>
+    <mat-slider #sldr color="accent" class="photo-slider" min="0" [max]="len-1" step="1" value="0" autofocus (keydown)="hideMessage()" (mouseenter)="hideMessage()" (touchstart)="hideMessage()"></mat-slider>
+  </div>
+  <img [src]=images[sldr.value] class="image">
+</div>
