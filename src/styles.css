@@ -6,7 +6,7 @@ h1 {
   font-size: 250%;
 }
 h2, h3 {
-  color: seagreen;
+  color: #15b066;
   font-family: 'Roboto', 'Helvetica Neue', sans-serif;
   font-weight: lighter;
 }
@@ -19,6 +19,8 @@ h6 {
 }
 body {
   margin: 2em;
+  position: absolute;
+  min-height: 100%;
 }
 
 p {
@@ -48,21 +50,30 @@ a:hover {
   font-family: 'Roboto', 'Helvetica Neue', sans-serif;
 }
 
-html, body { height: 100%; }
-body { margin: 0;
-   font-family: Roboto, "Helvetica Neue", sans-serif;
-   overflow: hidden;
+html, body {
+  height: 100%;
+  width: 100%;
+ }
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+  position: absolute;
  }
 
  .image-para {
-   text-align: center;
+  text-align: center;
  }
 
  .toolbar {
-  position: static;
-   margin-top: 0px;
-   background-color: seagreen;
- }
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  width: 100%;
+  background-color: #15b066;
+  }
 
  .home-image {
    margin: 5px;
@@ -74,47 +85,49 @@ body { margin: 0;
   width: 40px;
   border-radius: 100%;
   font-weight: bolder;
-  color: seagreen;
+  color: #15b066;
   background-color: rgb(51,51,51);
   font-size: 14pt;
   position: fixed;
-  margin-top: 0;
+  margin-top: 50pt;
   z-index: +1;
 }
 
 .page-text {
-  padding-left: 20%;
-  padding-right: 20%;
+  padding-left: 10%;
+  padding-right: 25%;
   padding-top: 0%;
   text-justify: auto;
   margin-bottom: 80px;
   margin-top: 80px;
+
 }
 
 .side-container {
-  display: block;
+  position: absolute;
   height: 100%;
+  width: 100%;
+
 }
 
 .side-content {
-  padding-bottom: 20px;
-  margin-bottom: 20px;
+  /* padding-bottom: 20px;
+  margin-bottom: 20px; */
   height: 100%;
+  width: 100%;
   overflow: scroll;
 }
 
 .side-sidenav {
-  width: 15%;
+  position: fixed;
+  margin-top: 50pt;
+  width: 18%;
   padding-bottom: 10px;
   box-sizing: border-box;
-  height: 91%;
+  height: 100%;
   padding-top: 0;
   padding-bottom: 0;
   border-right: 2px solid whitesmoke;
-  display: none;
-  -ms-overflow-style: none;
-  overflow-y: hidden;
-  overflow-x: hidden;
 }
 
 ::-webkit-scrollbar {
@@ -126,14 +139,18 @@ body { margin: 0;
   white-space: normal;
   margin-left: 30px;
   left: 100%;
-  font-size: 12pt;
+  font-size: 10pt;
   line-height: 14px;
 }
 
 #copyright {
   text-align: center;
   position: relative;
-  bottom: -40%;
+  bottom: 0%;
+}
+
+#me-logo {
+  position: relative;
 }
 
 /*Sidebar aesthetics*/
@@ -155,7 +172,7 @@ mat-sidenav a div:hover {
 mat-sidenav a div {
   margin-top: 5px;
   color: rgb(51,51,51);
-  background-color: seagreen;
+  background-color: #15b066;
   border: none;
   width: 92%;
   height: 50px;
@@ -168,12 +185,12 @@ mat-sidenav a div {
 
 .selected-link {
   background-color: rgb(51,51,51);
-  color: seagreen;
-  border: 4px inset seagreen;
+  color: #15b066;
+  border: 4px inset #15b066;
 }
 
 .selected-link:hover {
-  color:seagreen;
+  color:#15b066;
 }
 
 mat-sidenav a:hover {
@@ -189,9 +206,19 @@ mat-sidenav a:hover {
 
 .pdf-preview {
   margin-top: 30px;
-  width: 600px;
+  padding: 0 0 0 0;
+  width: auto;
+  height: auto;
+  max-width: 600px;
   overflow: hidden;
+  border-top: 2px dashed whitesmoke;
+}
 
+pdf-viewer {
+  position: relative;
+  box-sizing: border-box;
+  height: 100%;
+  bottom: 0;
 }
 
 .image {
@@ -225,6 +252,6 @@ mat-sidenav-content {
 }
 
 styles .mat-slider-thumb {
-  background-color: seagreen;
+  background-color: #15b066;
 }
 
